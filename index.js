@@ -35,4 +35,6 @@ function donelist() {
 module.exports = {
   todo: todo,
   list: list,
+  done: done,
+  donelist: donelist,
 };
