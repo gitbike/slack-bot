@@ -12,4 +12,10 @@ todo.done('ノートを買う');
 assert.deepEqual(todo.list(), ['鉛筆を買う']);
 assert.deepEqual(todo.donelist(), ['ノートを買う']);
 
+// delのテスト
+todo.del('鉛筆を買う');
+todo.del('ノートを買う');
+assert.deepEqual(todo.list(), []);
+assert.deepEqual(todo.donelist(), []);
+
 console.log('テストが正常に終了しました');
