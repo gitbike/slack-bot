@@ -6,6 +6,10 @@ function todo(task) {
   tasks.set(task, false);
 }
 
+function isDone(taskAndIsDonePair) {
+  return taskAndIsDonePair[1];
+}
+
 module.exports = {
   todo: todo,
 };
