@@ -10,6 +10,10 @@ function isDone(taskAndIsDonePair) {
   return taskAndIsDonePair[1];
 }
 
+function isNotDone(taskAndIsDonePair) {
+  return !isDone(taskAndIsDonePair);
+}
+
 module.exports = {
   todo: todo,
 };
