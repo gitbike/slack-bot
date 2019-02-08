@@ -32,6 +32,10 @@ function donelist() {
     .map(t => t[0]);
 }
 
+function del(task) {
+  tasks.delete(task);
+}
+
 module.exports = {
   todo: todo,
   list: list,
