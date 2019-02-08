@@ -14,6 +14,13 @@ function isNotDone(taskAndIsDonePair) {
   return !isDone(taskAndIsDonePair);
 }
 
+function list() {
+  return Array.from(tasks)
+    .filter(isNotDone)
+    .map(t => t[0]);
+}
+
 module.exports = {
   todo: todo,
+  list: list,
 };
