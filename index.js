@@ -20,6 +20,12 @@ function list() {
     .map(t => t[0]);
 }
 
+function done(task) {
+  if (tasks.has(task)) {
+    tasks.set(task, true);
+  }
+};
+
 module.exports = {
   todo: todo,
   list: list,
