@@ -24,7 +24,13 @@ function done(task) {
   if (tasks.has(task)) {
     tasks.set(task, true);
   }
-};
+}
+
+function donelist() {
+  return Array.from(tasks)
+    .filter(isDone)
+    .map(t => t[0]);
+}
 
 module.exports = {
   todo: todo,
