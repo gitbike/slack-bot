@@ -41,4 +41,5 @@ module.exports = {
   list: list,
   done: done,
   donelist: donelist,
+  del: del,
 };
